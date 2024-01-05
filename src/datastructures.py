@@ -34,6 +34,14 @@ class FamilyStructure:
                 return True
         return None
 
+    def update_member(self, id, member):
+        # Fill this method and update the return
+        for person in self._members:
+            if id == person['id']:
+                self._members.update(person)
+                return True
+        return None
+
     def get_member(self, id):
         # Fill this method and update the return
         for person in self._members:
